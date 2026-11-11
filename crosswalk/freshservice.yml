@@ -1,0 +1,16 @@
+provider: freshservice
+apis_io: https://apis.io/providers/freshservice/
+context: cmdb
+generated: '2026-11-11'
+concepts:
+  change_request:
+    path_segment:
+    - changes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/freshservice-openapi.yml#DELETE /changes/{id}
+    - openapi/_original/freshservice-openapi.yml#GET /changes
+    - openapi/_original/freshservice-openapi.yml#GET /changes/{id}
+    - openapi/_original/freshservice-openapi.yml#POST /changes
+    - openapi/_original/freshservice-openapi.yml#PUT /changes/{id}

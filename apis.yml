@@ -1,0 +1,45 @@
+aid: common-cmdb
+name: ITSM Change and CMDB
+type: Common
+description: 'The common ITSM Change and CMDB vocabulary, distilled from the harvested OpenAPI of 32 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- ITSM
+- IT Service Management
+- CMDB
+- Change Management
+- Common Schema
+created: '2026-11-11'
+modified: '2026-11-11'
+url: https://raw.githubusercontent.com/api-commons/cmdb/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-cmdb:cmdb
+  name: Common ITSM Change and CMDB Interface
+  description: The ITSM Change and CMDB interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/cmdb
+  tags:
+  - ITSM
+  - IT Service Management
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/cmdb/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/cmdb/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/cmdb/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: change_request
+    url: https://raw.githubusercontent.com/api-commons/cmdb/main/schema/change_request.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/cmdb/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,502 @@
+{
+ "cohort_size": 32,
+ "unreadable": [],
+ "concepts": {
+  "change_request": {
+   "atomicwork": {
+    "segments": [
+     "changes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "created_by": "integer",
+     "requester": "integer",
+     "owner": "integer",
+     "agent_group": "integer",
+     "assignee": "integer",
+     "change_type": "string",
+     "change_template": "integer",
+     "change_start_date": "string",
+     "change_completion_date": "string",
+     "planned_change_start_date": "string",
+     "planned_change_completion_date": "string",
+     "actual_change_start_date": "string",
+     "actual_change_completion_date": "string",
+     "subject": "string",
+     "priority": "string",
+     "status": "string",
+     "impact": "string",
+     "urgency": "string",
+     "parent_change_id": "integer",
+     "parent_display_id": "string",
+     "parent_request_type": "string",
+     "description": "string",
+     "attachments": "array",
+     "tags": "array",
+     "workspace_id": "integer",
+     "assets": "array",
+     "linked_requests": "array",
+     "custom_fields": "object",
+     "template_fields": "object",
+     "notes": "array",
+     "conversation_info": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "external_id": "string",
+     "external_source": "string",
+     "external_system_entity_reference": null
+    },
+    "evidence": [
+     "openapi/_original/atomicwork-public-api-openapi.yaml#GET /api/v1/change-management/changes/{display_id}",
+     "openapi/_original/atomicwork-public-api-openapi.yaml#GET /api/v1/forms/changes",
+     "openapi/_original/atomicwork-public-api-openapi.yaml#PATCH /api/v1/change-management/changes/{display_id}",
+     "openapi/_original/atomicwork-public-api-openapi.yaml#POST /api/v1/change-management/changes"
+    ]
+   },
+   "freshservice": {
+    "segments": [
+     "changes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/freshservice-openapi.yml#DELETE /changes/{id}",
+     "openapi/_original/freshservice-openapi.yml#GET /changes",
+     "openapi/_original/freshservice-openapi.yml#GET /changes/{id}",
+     "openapi/_original/freshservice-openapi.yml#POST /changes",
+     "openapi/_original/freshservice-openapi.yml#PUT /changes/{id}"
+    ]
+   },
+   "propelplm": {
+    "segments": [
+     "change"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "Id": "string",
+     "Name": "string",
+     "Custom_Field__c": "string",
+     "addAffectedItems": "array",
+     "removeAffectedItems": "array",
+     "details": "object",
+     "affectedItems": "array",
+     "attachments": "array",
+     "next": "string"
+    },
+    "evidence": [
+     "openapi/_original/propelplm-change-put-openapi.yml#PUT /change/{changeId}",
+     "openapi/_original/propelplm-core-openapi.yml#GET /change/{itemNumber}",
+     "openapi/_original/propelplm-core-openapi.yml#POST /change",
+     "openapi/_original/propelplm-release-package-openapi.yml#GET /change/{changeId}"
+    ]
+   },
+   "solarwinds": {
+    "segments": [
+     "changes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "number": "integer",
+     "name": "string",
+     "description": "string",
+     "state": "string",
+     "priority": "string",
+     "change_type": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/solarwinds-service-desk-openapi.yml#GET /changes.json"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "7signalsolutions",
+    "aquant",
+    "atlassian-jira",
+    "atomicwork",
+    "datto",
+    "device42",
+    "fieldpulse",
+    "freshservice",
+    "harmony",
+    "ilert",
+    "jira",
+    "jumpcloud",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "moveworks-servicenow",
+    "nacos",
+    "nagios",
+    "nexthink",
+    "ninjaone",
+    "propelplm",
+    "prosci",
+    "red-hat-ansible-automation-platform",
+    "rundeck",
+    "sciencelogic",
+    "servicedesk-plus",
+    "servicenow",
+    "signl4",
+    "solarwinds",
+    "sysaid",
+    "taskcall",
+    "zayo-group"
+   ],
+   "kebab-case": [
+    "7signalsolutions",
+    "aquant",
+    "atomicwork",
+    "datto",
+    "fieldpulse",
+    "harmony",
+    "ilert",
+    "jira",
+    "jumpcloud",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "moveworks-servicenow",
+    "nexthink",
+    "ninjaone",
+    "prosci",
+    "red-hat-ansible-automation-platform",
+    "sciencelogic",
+    "taskcall",
+    "zayo-group"
+   ],
+   "snake_case": [
+    "datto",
+    "device42",
+    "freshservice",
+    "jira",
+    "kandji",
+    "moogsoft",
+    "nagios",
+    "red-hat-ansible-automation-platform",
+    "servicenow",
+    "solarwinds"
+   ],
+   "other": [
+    "atlassian-jira",
+    "device42",
+    "jira",
+    "red-hat-ansible-automation-platform",
+    "solarwinds"
+   ],
+   "camelCase": [
+    "7signalsolutions",
+    "datto",
+    "jira",
+    "servicenow"
+   ],
+   "PascalCase": [
+    "propelplm",
+    "solarwinds"
+   ]
+  },
+  "path_param": {
+   "camelCase": [
+    "7signalsolutions",
+    "atlassian-jira",
+    "atomicwork",
+    "datto",
+    "fieldpulse",
+    "jira",
+    "moogsoft",
+    "moveworks",
+    "nagios",
+    "nexthink",
+    "ninjaone",
+    "propelplm",
+    "prosci",
+    "sciencelogic",
+    "servicenow",
+    "signl4",
+    "solarwinds",
+    "taskcall",
+    "zayo-group"
+   ],
+   "lower": [
+    "7signalsolutions",
+    "atlassian-jira",
+    "atomicwork",
+    "device42",
+    "fieldpulse",
+    "freshservice",
+    "ilert",
+    "jira",
+    "jumpcloud",
+    "moogsoft",
+    "moveworks",
+    "ninjaone",
+    "red-hat-ansible-automation-platform",
+    "rundeck",
+    "sciencelogic",
+    "servicedesk-plus",
+    "servicenow",
+    "solarwinds",
+    "zayo-group"
+   ],
+   "snake_case": [
+    "atomicwork",
+    "device42",
+    "harmony",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "ninjaone",
+    "red-hat-ansible-automation-platform",
+    "sciencelogic",
+    "servicedesk-plus",
+    "servicenow"
+   ],
+   "kebab-case": [
+    "device42",
+    "ilert",
+    "ninjaone"
+   ],
+   "PascalCase": [
+    "device42",
+    "propelplm"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "7signalsolutions",
+    "atlassian-jira",
+    "atomicwork",
+    "datto",
+    "device42",
+    "fieldpulse",
+    "freshservice",
+    "harmony",
+    "ilert",
+    "jira",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "nacos",
+    "nagios",
+    "nexthink",
+    "ninjaone",
+    "propelplm",
+    "prosci",
+    "red-hat-ansible-automation-platform",
+    "rundeck",
+    "sciencelogic",
+    "servicenow",
+    "solarwinds",
+    "zayo-group"
+   ],
+   "camelCase": [
+    "7signalsolutions",
+    "atlassian-jira",
+    "datto",
+    "fieldpulse",
+    "jira",
+    "moogsoft",
+    "moveworks",
+    "nacos",
+    "nexthink",
+    "ninjaone",
+    "propelplm",
+    "prosci",
+    "rundeck",
+    "servicenow",
+    "zayo-group"
+   ],
+   "snake_case": [
+    "7signalsolutions",
+    "aquant",
+    "atomicwork",
+    "device42",
+    "fieldpulse",
+    "freshservice",
+    "harmony",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "nagios",
+    "red-hat-ansible-automation-platform",
+    "sciencelogic",
+    "servicenow",
+    "solarwinds"
+   ],
+   "other": [
+    "fieldpulse",
+    "jira",
+    "kandji",
+    "moveworks",
+    "moveworks-servicenow",
+    "propelplm",
+    "red-hat-ansible-automation-platform",
+    "sciencelogic"
+   ],
+   "kebab-case": [
+    "ilert",
+    "moogsoft",
+    "nexthink"
+   ],
+   "PascalCase": [
+    "sciencelogic"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "7signalsolutions",
+    "device42",
+    "fieldpulse",
+    "harmony",
+    "jira",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "ninjaone",
+    "propelplm",
+    "prosci",
+    "red-hat-ansible-automation-platform",
+    "sciencelogic",
+    "servicenow",
+    "solarwinds"
+   ],
+   "offset": [
+    "device42",
+    "harmony",
+    "jira",
+    "kandji",
+    "moogsoft",
+    "moveworks",
+    "prosci",
+    "red-hat-ansible-automation-platform",
+    "rundeck",
+    "sciencelogic",
+    "servicenow",
+    "solarwinds"
+   ],
+   "page": [
+    "7signalsolutions",
+    "atomicwork",
+    "datto",
+    "fieldpulse",
+    "freshservice",
+    "harmony",
+    "kandji",
+    "propelplm",
+    "red-hat-ansible-automation-platform",
+    "solarwinds"
+   ],
+   "size": [
+    "7signalsolutions",
+    "datto",
+    "device42",
+    "jira",
+    "kandji",
+    "red-hat-ansible-automation-platform",
+    "solarwinds"
+   ],
+   "page_size": [
+    "atomicwork",
+    "harmony",
+    "moveworks",
+    "nacos",
+    "ninjaone",
+    "red-hat-ansible-automation-platform"
+   ],
+   "cursor": [
+    "ilert",
+    "jira",
+    "kandji",
+    "moveworks",
+    "ninjaone"
+   ],
+   "per_page": [
+    "7signalsolutions",
+    "atomicwork",
+    "freshservice",
+    "solarwinds"
+   ],
+   "max_results": [
+    "atlassian-jira",
+    "ilert",
+    "jira",
+    "moogsoft"
+   ],
+   "start": [
+    "7signalsolutions",
+    "jira",
+    "moogsoft"
+   ],
+   "after": [
+    "jira",
+    "kandji",
+    "ninjaone"
+   ],
+   "starting_after": [
+    "jira",
+    "moveworks"
+   ],
+   "skip": [
+    "moogsoft",
+    "moveworks"
+   ],
+   "count": [
+    "moveworks",
+    "moveworks-servicenow"
+   ],
+   "top": [
+    "moveworks"
+   ],
+   "page_token": [
+    "moveworks"
+   ],
+   "before": [
+    "ninjaone"
+   ],
+   "next": [
+    "solarwinds"
+   ]
+  },
+  "property": {
+   "lower": [
+    "atomicwork",
+    "propelplm",
+    "solarwinds"
+   ],
+   "snake_case": [
+    "atomicwork",
+    "solarwinds"
+   ],
+   "PascalCase": [
+    "propelplm"
+   ],
+   "other": [
+    "propelplm"
+   ],
+   "camelCase": [
+    "propelplm"
+   ]
+  }
+ }
+}

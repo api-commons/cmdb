@@ -1,0 +1,107 @@
+context: cmdb
+name: ITSM Change and CMDB
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - ITSM
+  - IT Service Management
+  - CMDB
+  - Change Management
+  - Problem Management
+  - ITIL
+  - Service Management
+  - IT Operations
+  providers_with_harvested_openapi: 32
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  change_request:
+    segments_seen:
+      changes: 3
+      change: 1
+    providers_exposing: 4
+    providers_with_readable_schema: 3
+    operations:
+    - operation: GET collection
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: GET item
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: POST collection
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: UPDATE item
+      providers: 3
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 1
+      share: 0.25
+      tier: long-tail
+    properties:
+    - name: description
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - description
+      - notes
+      - details
+    - name: name
+      tier: core
+      providers: 3
+      share: 1.0
+      type: string
+      spellings:
+      - subject
+      - Name
+      - name
+    long_tail_count: 35
+    long_tail_sample:
+    - attachments
+    - created_at
+    - id
+    - risk
+    - status
+    - type
+    - actual_change_completion_date
+    - actual_change_start_date
+    - add_affected_items
+    - affected_items
+    - agent_group
+    - assignee_id
+    - change_completion_date
+    - change_start_date
+    - change_template
+    - configuration_item_ids
+    - conversation_info
+    - custom_field_c
+    - external_id
+    - external_source
+    - external_system_entity_reference
+    - linked_requests
+    - metadata
+    - number
+    - parent_change_id
+    - parent_display_id
+    - parent_request_type
+    - planned_change_completion_date
+    - planned_change_start_date
+    - remove_affected_items
+    - requester_id
+    - template_fields
+    - updated_at
+    - urgency
+    - workspace_id

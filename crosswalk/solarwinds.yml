@@ -1,0 +1,14 @@
+provider: solarwinds
+apis_io: https://apis.io/providers/solarwinds/
+context: cmdb
+generated: '2026-11-11'
+concepts:
+  change_request:
+    path_segment:
+    - changes
+    properties:
+      description: description
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/solarwinds-service-desk-openapi.yml#GET /changes.json

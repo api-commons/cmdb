@@ -1,0 +1,23 @@
+context: cmdb
+generated: '2026-11-11'
+adopters:
+- provider: atomicwork
+  apis_io: https://apis.io/providers/atomicwork/
+  crosswalk: crosswalk/atomicwork.yml
+  concepts:
+  - change_request
+- provider: freshservice
+  apis_io: https://apis.io/providers/freshservice/
+  crosswalk: crosswalk/freshservice.yml
+  concepts:
+  - change_request
+- provider: propelplm
+  apis_io: https://apis.io/providers/propelplm/
+  crosswalk: crosswalk/propelplm.yml
+  concepts:
+  - change_request
+- provider: solarwinds
+  apis_io: https://apis.io/providers/solarwinds/
+  crosswalk: crosswalk/solarwinds.yml
+  concepts:
+  - change_request

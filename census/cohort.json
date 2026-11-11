@@ -1,0 +1,258 @@
+[
+ {
+  "slug": "7signalsolutions",
+  "specs": [
+   "openapi/_original/7signalsolutions-gateway-v2.json",
+   "openapi/_original/7signalsolutions-openapi.json",
+   "openapi/_original/7signalsolutions-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "aquant",
+  "specs": [
+   "openapi/_original/aquant-mcp-server-openapi.json",
+   "openapi/_original/aquant-voiceai-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "atlassian-jira",
+  "specs": [
+   "openapi/_original/atlassian-jira-openapi.yml"
+  ]
+ },
+ {
+  "slug": "atomicwork",
+  "specs": [
+   "openapi/_original/atomicwork-public-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "datto",
+  "specs": [
+   "openapi/_original/datto-rmm-openapi.json"
+  ]
+ },
+ {
+  "slug": "device42",
+  "specs": [
+   "openapi/_original/device42-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "fieldpulse",
+  "specs": [
+   "openapi/_original/fieldpulse-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "freshservice",
+  "specs": [
+   "openapi/_original/freshservice-openapi.yml"
+  ]
+ },
+ {
+  "slug": "harmony",
+  "specs": [
+   "openapi/_original/harmony-service-desk-openapi.json"
+  ]
+ },
+ {
+  "slug": "ilert",
+  "specs": [
+   "openapi/_original/ilert-ilert-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "jira",
+  "specs": [
+   "openapi/_original/jira-cloud-platform-rest-api-openapi.yml",
+   "openapi/_original/jira-platform-openapi.json",
+   "openapi/_original/jira-service-management-openapi.json",
+   "openapi/_original/jira-software-openapi.json"
+  ]
+ },
+ {
+  "slug": "jumpcloud",
+  "specs": [
+   "openapi/_original/jumpcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kandji",
+  "specs": [
+   "openapi/_original/kandji-endpoint-management-openapi.json",
+   "openapi/_original/kandji-upload-to-s3-openapi.json"
+  ]
+ },
+ {
+  "slug": "moogsoft",
+  "specs": [
+   "openapi/_original/moogsoft-alerts-incidents-openapi.yaml",
+   "openapi/_original/moogsoft-azure-service-openapi.yaml",
+   "openapi/_original/moogsoft-byo-api-service-openapi.yaml",
+   "openapi/_original/moogsoft-cloudwatch-service-openapi.yaml",
+   "openapi/_original/moogsoft-collectors-openapi.yaml",
+   "openapi/_original/moogsoft-config-openapi.yaml",
+   "openapi/_original/moogsoft-events-integration-openapi.yaml",
+   "openapi/_original/moogsoft-incident-responder-openapi.yaml",
+   "openapi/_original/moogsoft-metric-processor-openapi.yaml",
+   "openapi/_original/moogsoft-metrics-integration-openapi.yaml",
+   "openapi/_original/moogsoft-pagerduty-service-openapi.yaml",
+   "openapi/_original/moogsoft-probable-rootcause-openapi.yaml",
+   "openapi/_original/moogsoft-similar-incidents-openapi.yaml",
+   "openapi/_original/moogsoft-ui-services-openapi.yaml",
+   "openapi/_original/moogsoft-user-management-openapi.yaml",
+   "openapi/_original/moogsoft-webhook-service-v2-openapi.yaml",
+   "openapi/_original/moogsoft-workflow-engine-service-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "moveworks",
+  "specs": [
+   "openapi/_original/moveworks-beta-conversations-api-openapi.yaml",
+   "openapi/_original/moveworks-content-gateway-openapi.yaml",
+   "openapi/_original/moveworks-conversations-api-openapi.yaml",
+   "openapi/_original/moveworks-data-api-openapi.yaml",
+   "openapi/_original/moveworks-events-api-openapi.yaml",
+   "openapi/_original/moveworks-forms-gateway-openapi.yaml",
+   "openapi/_original/moveworks-identity-gateway-openapi.yaml",
+   "openapi/_original/moveworks-knowledge-gateway-openapi.yaml",
+   "openapi/_original/moveworks-webhook-listeners-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "moveworks-servicenow",
+  "specs": [
+   "openapi/_original/moveworks-servicenow-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nacos",
+  "specs": [
+   "openapi/_original/nacos-open-api.yml"
+  ]
+ },
+ {
+  "slug": "nagios",
+  "specs": [
+   "openapi/_original/nagios-xi-openapi.yml",
+   "openapi/_original/ncpa-openapi.yml",
+   "openapi/_original/nrdp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nexthink",
+  "specs": [
+   "openapi/_original/nexthink-campaigns-api-openapi.json",
+   "openapi/_original/nexthink-data-management-api-openapi.json",
+   "openapi/_original/nexthink-enrichment-api-openapi.json",
+   "openapi/_original/nexthink-nql-api-openapi.json",
+   "openapi/_original/nexthink-remote-actions-api-openapi.json",
+   "openapi/_original/nexthink-spark-api-openapi.json",
+   "openapi/_original/nexthink-workflows-openapi.json"
+  ]
+ },
+ {
+  "slug": "ninjaone",
+  "specs": [
+   "openapi/_original/ninjaone-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "propelplm",
+  "specs": [
+   "openapi/_original/propelplm-bom-get-openapi.yml",
+   "openapi/_original/propelplm-change-put-openapi.yml",
+   "openapi/_original/propelplm-configuration-openapi.yml",
+   "openapi/_original/propelplm-core-openapi.yml",
+   "openapi/_original/propelplm-item-attachment-openapi.yml",
+   "openapi/_original/propelplm-manufacturer-item-openapi.yml",
+   "openapi/_original/propelplm-manufacturer-part-openapi.yml",
+   "openapi/_original/propelplm-markup-openapi.yml",
+   "openapi/_original/propelplm-pim-openapi.yml",
+   "openapi/_original/propelplm-release-package-openapi.yml"
+  ]
+ },
+ {
+  "slug": "prosci",
+  "specs": [
+   "openapi/_original/prosci-change-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "red-hat-ansible-automation-platform",
+  "specs": [
+   "openapi/_original/red-hat-ansible-automation-platform-ansible-lightspeed-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-automation-controller-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-automation-hub-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-event-driven-ansible-openapi.json",
+   "openapi/_original/red-hat-ansible-automation-platform-platform-gateway-openapi.json"
+  ]
+ },
+ {
+  "slug": "rundeck",
+  "specs": [
+   "openapi/_original/rundeck-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sciencelogic",
+  "specs": [
+   "openapi/_original/sciencelogic-skylar-compliance-openapi.json"
+  ]
+ },
+ {
+  "slug": "servicedesk-plus",
+  "specs": [
+   "openapi/_original/servicedesk-plus-openapi.yml"
+  ]
+ },
+ {
+  "slug": "servicenow",
+  "specs": [
+   "openapi/_original/contact-api-openapi.yaml",
+   "openapi/_original/servicenow-aggregate-api-openapi.yml",
+   "openapi/_original/servicenow-attachment-api-openapi.yml",
+   "openapi/_original/servicenow-change-management-api-openapi.yml",
+   "openapi/_original/servicenow-cmdb-instance-api-openapi.yml",
+   "openapi/_original/servicenow-import-set-api-openapi.yml",
+   "openapi/_original/servicenow-service-catalog-api-openapi.yml",
+   "openapi/_original/servicenow-table-api-openapi.yml",
+   "openapi/_original/trouble-ticket-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "signl4",
+  "specs": [
+   "openapi/_original/signl4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "solarwinds",
+  "specs": [
+   "openapi/_original/solarwinds-loggly-openapi.yml",
+   "openapi/_original/solarwinds-orion-openapi.yml",
+   "openapi/_original/solarwinds-papertrail-openapi.yml",
+   "openapi/_original/solarwinds-pingdom-openapi.yml",
+   "openapi/_original/solarwinds-service-desk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sysaid",
+  "specs": [
+   "openapi/_original/sysaid-openapi.yml"
+  ]
+ },
+ {
+  "slug": "taskcall",
+  "specs": [
+   "openapi/_original/taskcall-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zayo-group",
+  "specs": [
+   "openapi/_original/zayo-group-openapi.yml"
+  ]
+ }
+]

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/cmdb/main/schema/change_request.json",
+  "title": "Change Request",
+  "description": "The common change_request in ITSM Change and CMDB, distilled from 3 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "description",
+        "notes",
+        "details"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "subject",
+        "Name",
+        "name"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "cmdb",
+    "concept": "change_request",
+    "providers": 3,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

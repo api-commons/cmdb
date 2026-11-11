@@ -1,0 +1,100 @@
+openapi: 3.1.0
+info:
+  title: ITSM Change and CMDB (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common ITSM Change and CMDB interface, distilled from the harvested OpenAPI of 32 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /change-requests:
+    get:
+      operationId: listChangeRequests
+      summary: List change requests
+      tags:
+      - Change Requests
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/ChangeRequest'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createChangeRequest
+      summary: Create a change request
+      tags:
+      - Change Requests
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /change-requests/{change_request_id}:
+    parameters:
+    - $ref: '#/components/parameters/change_request_id'
+    get:
+      operationId: getChangeRequest
+      summary: Get a change request
+      tags:
+      - Change Requests
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateChangeRequest
+      summary: Update a change request
+      tags:
+      - Change Requests
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+components:
+  schemas:
+    ChangeRequest:
+      $ref: ./schema/change_request.json
+  parameters:
+    change_request_id:
+      name: change_request_id
+      in: path
+      required: true
+      schema:
+        type: string
